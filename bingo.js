@@ -99,9 +99,7 @@ const bomb = (e) => {
     }
     for(let i=0; i<tail.length; i++) {
         for(let j = 0; j<tail[4-i].length; j++) {
-            if(j>0&&i>0||[...tail[4-i][4-j+1].classList].includes('done')||[...tail[4-i+1][4-j].classList].includes('done')) {
-                continue;
-            }
+            
             if(count === 2){
                 // count가 2일 경우 빙고x, 지우기
                 if([...tail[4-i][4-j].classList].includes('boom')){

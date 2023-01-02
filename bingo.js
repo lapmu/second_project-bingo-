@@ -90,40 +90,40 @@ const bomb = (e) => {
         count = 2;
     }
     
-    for(let i=0; i<tail.length; i++) {
-        for(let j = 0; j<tail.length; j++) {
-            if([...tail[i][j].classList].includes('ex')){
-                tail[i][j].classList.remove('ex')
-            }
-        }
-    }
-    for(let i=0; i<tail.length; i++) {
-        for(let j = 0; j<tail[4-i].length; j++) {
+    // for(let i=0; i<tail.length; i++) {
+    //     for(let j = 0; j<tail.length; j++) {
+    //         if([...tail[i][j].classList].includes('ex')){
+    //             tail[i][j].classList.remove('ex')
+    //         }
+    //     }
+    // }
+    // for(let i=0; i<tail.length; i++) {
+    //     for(let j = 0; j<tail[4-i].length; j++) {
             
-            if(count === 2){
-                // count가 2일 경우 빙고x, 지우기
-                if([...tail[4-i][4-j].classList].includes('boom')){
-                    if(i>0&&i<j){
-                        tail[4-i+1][4-j].classList.add('ex')
-                    }else if(j>0&&j<i) {
-                        tail[4-i][4-j+1].classList.add('ex')
-                    }
-                }
-            }else if(count === 3) {
-                // count가 3일 경우 빙고x, 지우거나 채우기
-                if([...tail[4-i][4-j].classList].includes('boom')){
-                    if(i>0&&i<j){
-                        tail[4-i+1][4-j].classList.add('ex')
-                    }else if(j>0&&j<i) {
-                        tail[4-i][4-j+1].classList.add('ex')
-                    }
-                }
-            }else if(count === 4) {
-                // count가 4일 경우 빙고0
+    //         if(count === 2){
+    //             // count가 2일 경우 빙고x, 지우기
+    //             if([...tail[4-i][4-j].classList].includes('boom')){
+    //                 if(i>0&&i<j){
+    //                     tail[4-i+1][4-j].classList.add('ex')
+    //                 }else if(j>0&&j<i) {
+    //                     tail[4-i][4-j+1].classList.add('ex')
+    //                 }
+    //             }
+    //         }else if(count === 3) {
+    //             // count가 3일 경우 빙고x, 지우거나 채우기
+    //             if([...tail[4-i][4-j].classList].includes('boom')){
+    //                 if(i>0&&i<j){
+    //                     tail[4-i+1][4-j].classList.add('ex')
+    //                 }else if(j>0&&j<i) {
+    //                     tail[4-i][4-j+1].classList.add('ex')
+    //                 }
+    //             }
+    //         }else if(count === 4) {
+    //             // count가 4일 경우 빙고0
 
-            }
-        }
-    }
+    //         }
+    //     }
+    // }
     
     
    

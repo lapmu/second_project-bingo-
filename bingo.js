@@ -89,7 +89,9 @@ const bomb = (e) => {
     if(count === 5) {
         count = 2;
     }
-    
+
+    //! 내 실력으론 완성 불가
+
     // for(let i=0; i<tail.length; i++) {
     //     for(let j = 0; j<tail.length; j++) {
     //         if([...tail[i][j].classList].includes('ex')){
